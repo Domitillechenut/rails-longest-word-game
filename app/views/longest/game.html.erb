@@ -1,0 +1,9 @@
+
+<p>Voici la grille: <%= @grid %></p>
+<form action="/score">
+  <label for="question">Give me a word</label>
+  <input type="text" id="word" name="word" placeholder="a word?">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="start" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
